@@ -2,10 +2,188 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Autonomens</title>
+  <title>Storytelling - Lectoure</title>
+
+  <link rel="stylesheet" href="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css">
+  <link rel="stylesheet" href="http://cartodb.github.io/odyssey.js/sandbox/css/slides.css">
+  <script src="http://cartodb.github.io/odyssey.js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
+  <div id="map" style="width: 100%; height: 100%;"></div>
 
+  <div id="slides_container" style="display:block;">
+    <div id="dots"></div>
 
+    <ul id="navButtons">
+      <li><a class="prev"></a></li>
+      <li><a class="next"></a></li>
+    </ul>
+
+    <div id="slides"></div>
+  </div>
+
+  <div id="credits">
+    <span class="title" id="title">Storytelling - Lectoure</span>
+    <span class="author"><strong id="author">Autonomens</strong></span>
+  </div>
+
+  <script src="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
+  <script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script type="text/template" id="md_template">```
+-baseurl: "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}.jpg"
+-title: "Circuit médiéval de Lectoure (Gers)"
+-author: "Autonomens"
+```
+
+# Circuit médiéval de Lectoure (Gers)
+```
+- center: [43.9340, 0.6232]
+- zoom: 17
+L.marker([43.9340, 0.6232]).actions.addRemove(S.map)
+```
+Bienvenue !
+
+Point de départ du circuit  
+![Ville de Lectoure](http://lectoure.fr/Templates/tpl1/medias/logo.png)
+
+# Départ depuis la Cathédrale
+```
+- center: [43.9338, 0.6242]
+- zoom: 17
+L.marker([43.9338, 0.6242]).actions.addRemove(S.map)
+```
+![Cathédrale](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVR73/322010/IVR73_000681_I_1/VIG/IVR73_20103250174NUCA_V.JPG)
+
+[Cathédrale Saint-Gervais et Saint Protais](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IA00038762)
+
+# Maison de Galard
+```
+- center: [43.9343, 0.6221]
+- zoom: 17
+L.marker([43.9343, 0.6221]).actions.addRemove(S.map)
+```
+![Maison de Galard](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVC32208/322011/IVC32208_000008_I_1/VIG/IVC32208_20113200379NUCA_V.JPG)
+
+[Maison de Galard](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IA32001113)
+
+# Sénéchaussée
+```
+- center: [43.9349, 0.6204]
+- zoom: 17
+L.marker([43.9349, 0.6204]).actions.addRemove(S.map)
+```
+Le long du parcours vous aurez des exemples des hautes maisons en pierre.
+
+Arrivée au point :
+
+La porte et la croisée de cette façade sont les vestiges visibles du siège de la Sénéchaussée établie par Louis XI
+
+![Sénéchaussée](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVC32208/322010/IVC32208_000004_I_1/VIG/IVC32208_20103200274NUCA_V.JPG?1428584110068)
+
+# Edifice long de 21m
+```
+- center: [43.9352, 0.6198]
+- zoom: 17
+L.marker([43.9352, 0.6198]).actions.addRemove(S.map)
+```
+A l'Est de l'église des Cordeliers se site cet [edifice non-identifié](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IA32001024)
+
+![Edifice non-identifié](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVC32208/322009/IVC32208_000001_I_1/VIG/IVC32208_20093200305NUCA_V.JPG)
+
+# Eglise du couvent des Cordeliers
+```
+- center: [43.9351, 0.6194]
+- zoom: 17
+L.marker([43.9351, 0.6194]).actions.addRemove(S.map)
+```
+![Eglise Cordelier](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVC32208/322009/IVC32208_000001_I_1/VIG/IVC32208_20093200286NUCA_V.JPG?1428587051007)
+
+[en savoir plus](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IA32001029)
+
+# Couvent des Cordeliers
+```
+- center: [43.9352, 0.6192]
+- zoom: 17
+L.marker([43.9352, 0.6192]).actions.addRemove(S.map)
+```
+![Couvent des Cordeliers](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVC32208/322009/IVC32208_000001_I_1/VIG/IVC32208_20093200270NUCA_V.JPG?1428587054404)
+
+[en savoir plus](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IA00038766)
+
+# Château des Comtes d'Armagnac
+```
+- center: [43.9362, 0.6156]
+- zoom: 17
+L.marker([43.9362, 0.6156]).actions.addRemove(S.map)
+```
+![Château des Comtes d'Armagnac](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVC32208/322010/IVC32208_000004_I_1/VIG/IVC32208_20103200286NUCA_V.JPG?1428585147984)
+
+[en savoir plus](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IA00038777)
+
+# Couvent des Carmes
+```
+- center: [43.9341, 0.6194]
+- zoom: 17
+L.marker([43.9341, 0.6194]).actions.addRemove(S.map)
+```
+![Couvent des Carmes](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVC32208/322013/IVC32208_000012_I_1/VIG/IVC32208_20133200169NUCA_V.JPG?1428585452428)
+
+[en savoir plus](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IA00038764)
+
+# Eglise du Saint-Esprit
+```
+- center: [43.9339, 0.6196]
+- zoom: 17
+L.marker([43.9339, 0.6196]).actions.addRemove(S.map)
+```
+![Eglise du Saint-Esprit](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVC32208/322012/IVC32208_000010_I_1/VIG/IVC32208_20123200143NUCA_V.JPG)
+
+[en savoir plus](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IA32001117)
+
+# Voûte peinte
+```
+- center: [43.9338, 0.6214]
+- zoom: 17
+L.marker([43.9338, 0.6214]).actions.addRemove(S.map)
+```
+![Voûte peinte](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//INV/DPT32-2002/VIG/IVR73_02320017NUC_V.JPG)
+
+[en savoir plus](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IM32000406)
+
+# Tour d'Albinhac
+```
+- center: [43.9340, 0.6220]
+- zoom: 17
+L.marker([43.9340, 0.6220]).actions.addRemove(S.map)
+```
+![Tour d'Albinhac](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVC32208/322010/IVC32208_000004_I_1/VIG/IVC32208_20103200271NUCA_V.JPG?1428586439810)
+
+[en savoir plus](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IA00038772)
+
+# Fontaine de Fontélie
+```
+- center: [43.9326, 0.6238]
+- zoom: 17
+L.marker([43.9326, 0.6238]).actions.addRemove(S.map)
+```
+![Fontaine de Fontélie](http://patrimoines.midipyrenees.fr/fileadmin/img/renabl//IVC32208/322013/IVC32208_000013_I_1/VIG/IVC32208_20133200194NUCA_V.JPG)
+
+[en savoir plus](http://patrimoines.midipyrenees.fr/fr/rechercher/recherche-base-de-donnees/index.html?notice=IA00038818)
+
+# Le circuit est terminé !
+```
+- center: [43.9336, 0.6245]
+- zoom: 14
+L.marker([43.9336, 0.6245]).actions.addRemove(S.map)
+```
+Ce parcours représente environ 2kms pendant lesquels vous serez émerveillés par le charme des nombreuses maisons en pierre qui jalonnent le circuit.
+
+Bien des secrets se cachent dans ces maisons en pierre ! A vous de les découvrir...
+
+[Les sources de cette présentation](http://patrimoines.midipyrenees.fr/cartographie-interactive/randonnees-patrimoine/lectoure-medieval/index.html)
+  </script>
 </body>
 </html>
